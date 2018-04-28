@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	</head>
+
+	<body> 
+
+		<div class="container">
+			<br>
+			<h1> Survey Time! </h1>
+			<h3> Simply answer the questions and we'll match you to someone based on your answers! </h3>
+			<p class="lead"> Questions are answered on a scaled between "1" and "5", "1" being you "very disagree" with the question, and "5" being you "very agree" with the question. </p>
+			
+			<hr>
+
+			<form>
+
+				<div class="form-group">
+					<h3> About You </h3>
+					<label for="name"> <h5> Name </h5> </label>
+					<input type="text" class="form-control" id="name" placeholder="Enter your name">
+				</div>
+				<div class="form-group">
+					<label for="image"> <h5> Image </h5> </label>
+					<input type="text" class="form-control" id="image" placeholder="Enter a link to a photo of you">
+				</div>
+
+				<div class="form-group">
+					<h3> Question 1</h3>
+					<label for="queOne"> A hot dog is a sandwich. </label>
+					<select class="form-control col-md-3" id="queOne">
+  						<option>1</option>
+  						<option>2</option>
+  						<option>3</option>
+  						<option>4</option>
+  						<option>5</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<h3> Question 2</h3>
+					<label for="queTwo"> Mountains are better then beaches. </label>
+					<select class="form-control col-md-3" id="queTwo">
+  						<option>1</option>
+  						<option>2</option>
+  						<option>3</option>
+  						<option>4</option>
+  						<option>5</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<h3> Question 3</h3>
+					<label for="queThree"> Bears, Beats, Battlestar Galactica. </label>
+					<select class="form-control col-md-3" id="queThree">
+  						<option>1</option>
+  						<option>2</option>
+  						<option>3</option>
+  						<option>4</option>
+  						<option>5</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<h3> Question 4</h3>
+					<label for="queFour"> You would rather watch Revenge of the Sith over The Last Jedi. </label>
+					<select class="form-control col-md-3" id="queFour">
+  						<option>1</option>
+  						<option>2</option>
+  						<option>3</option>
+  						<option>4</option>
+  						<option>5</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<h3> Question 5</h3>
+					<label for="queFive"> You can only watch the extended editions of the Lord of The Rings Trilogy. </label>
+					<select class="form-control col-md-3" id="queFive">
+  						<option>1</option>
+  						<option>2</option>
+  						<option>3</option>
+  						<option>4</option>
+  						<option>5</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<h3> Question 6</h3>
+					<label for="queSix"> You would rather read a book than a movie. </label>
+					<select class="form-control col-md-3" id="queSix">
+  						<option>1</option>
+  						<option>2</option>
+  						<option>3</option>
+  						<option>4</option>
+  						<option>5</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<h3> Question 7</h3>
+					<label for="queSeven"> Modern Warfare 2 is the BEST Call of Duty. </label>
+					<select class="form-control col-md-3" id="queSeven">
+  						<option>1</option>
+  						<option>2</option>
+  						<option>3</option>
+  						<option>4</option>
+  						<option>5</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<h3> Question 8</h3>
+					<label for="queEight"> Jared Leto was an "okay" Joker. </label>
+					<select class="form-control col-md-3" id="queEight">
+  						<option>1</option>
+  						<option>2</option>
+  						<option>3</option>
+  						<option>4</option>
+  						<option>5</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<h3> Question 9</h3>
+					<label for="queNine"> Coffee? </label>
+					<select class="form-control col-md-3" id="queNine">
+  						<option>1</option>
+  						<option>2</option>
+  						<option>3</option>
+  						<option>4</option>
+  						<option>5</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<h3> Question 10</h3>
+					<label for="queTen"> Heelys is a form of transportation. </label>
+					<select class="form-control col-md-3" id="queTen">
+  						<option>1</option>
+  						<option>2</option>
+  						<option>3</option>
+  						<option>4</option>
+  						<option>5</option>
+					</select>
+				</div>
+				<br>
+				
+				<h6> We promise we wont sell your data!</h6>
+				<button type="submit" class="btn btn-primary" id="submit">Submit!</button> 
+			</form>
+		</div>
+
+		<br>
+		<br>
+		<br>
+
+		<div class="modal" tabindex="-1" role="dialog" id="myModal">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title">We found a Match!</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body" id="match">
+		        
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+	</body>
+	
+	
+
+	<!--<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+	<script> 
+		$("#submit").on("click", function(event){
+			event.preventDefault();
+			console.log("in the on click");
+			var newUser = {
+				name: $("#name").val().trim(),
+				photo: $("#image").val().trim(),
+				scores: [$("#queOne").val().trim(), $("#queTwo").val().trim(), $("#queThree").val().trim(), $("#queFour").val().trim(), $("#queFive").val().trim(), $("#queSix").val().trim(), $("#queSeven").val().trim(), $("#queEight").val().trim(), $("#queNine").val().trim(), $("#queTen").val().trim()]
+			};
+
+			$.post('/api/users', newUser).then(function(data){
+				console.log("new user added." + data);
+			});
+
+			$.get('/api/users', function(data){
+
+				console.log(data);
+
+				var totDif = 1000;
+				var newTotDif = 0;
+
+				for (var j = 0; j < data.length - 1; j++){
+
+					for (var i = 0; i < 10; i++){
+
+						newTotDif += Math.abs(parseInt(newUser.scores[i]) - parseInt(data[j].scores[i])); 
+
+					}
+
+					if(newTotDif <= totDif){
+							totDif = newTotDif;
+							var match = data[j];
+
+					} 
+			
+					newTotDif = 0;
+	
+				}
+
+				console.log("=============================");
+				console.log(totDif);
+				console.log(match);
+
+				postStuff(match);
+
+			});
+
+			function postStuff(data){
+				var matchName = $("<h3>").text(data.name);
+				var matchImage = $("<img>");
+				matchImage.attr("src", data.photo);
+				matchImage.attr("width", "300px");
+				matchImage.attr("height", "300px");
+
+				$("#match").empty();
+
+				$("#match").append(matchName);
+				$("#match").append(matchImage);
+				//Modal
+
+				$('#myModal').modal();
+			}
+		});
+	</script>
+
+</html>
