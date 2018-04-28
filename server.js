@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var apiRou = require('./App/Routing/apiRoutes');
 var htmlRou = require('./App/Routing/htmlRoutes');
 
-const PORT = process.env.PROT || 5000;
+const PORT = process.env.PORT || 5000;
 const app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
